@@ -1,0 +1,242 @@
+.cart_Box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart_Img {
+    display: flex;
+    align-items: center;
+}
+
+.cart_Img img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.remove span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-right: 15px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.buttons button:nth-child(1) {
+    padding: 5px 10px;
+    border: none;
+    background-color: #2cbb66;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-right: 10px;
+
+}
+.buttons button:nth-child(2) {
+    padding: 5px 10px;
+    border: none;
+    background-color: rgb(255,0,0);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+
+}
+
+.amount span{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 10px;
+    
+}
+
+.remove button {
+    padding: 5px 10px;
+    border: none;
+    background-color: rgb(255,0,0);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.buttons button:nth-child(1):hover {
+    background-color: #238e4d;
+}
+.buttons button:hover {
+    background-color: rgb(179, 11, 11);
+}
+.remove button:hover {
+    background-color: rgb(179, 11, 11);
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #f1f1f1;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.total span:nth-child(1) {
+    color: #333;
+}
+
+.total span:nth-child(2) {
+    color: #2a9856;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+
+@media (max-width: 1024px) {
+    .cart_Box {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 10px;
+    }
+
+    .cart_Img {
+        margin-bottom: 10px; 
+    }
+
+    .buttons {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .buttons button {
+        width: 100%; 
+        margin-bottom: 5px; 
+    }
+
+    .buttons {
+        display: flex; 
+        gap: 6px; 
+        flex-direction: row;
+        margin-bottom: 1vh;
+    }
+
+    
+    .amount span{
+       font-size: 1.5rem;
+        margin-top:-5rem ;
+    }   
+
+    .remove span {
+        font-size: 1.5rem; 
+    }
+
+    .remove button{
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+
+    .amount span {
+        font-size: 1.2rem; 
+    }
+
+    .remove button {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .cart_Box {
+        padding: 8px; 
+    }
+
+    .cart_Img img {
+        width: 50px; 
+        height: 50px;
+    }
+
+    .buttons button {
+        font-size: 0.9rem; 
+    }
+    .buttons {
+        display: flex; 
+        gap: 6px; 
+        flex-direction: row;
+        margin-bottom: 1vh;
+    }
+
+    .amount{
+        margin-top:3px;
+        margin-left: 3px;
+    }   
+
+    .remove span {
+        font-size: 1.5rem; 
+    }
+
+    .remove button{
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+
+    .amount span {
+        font-size: 1.5rem; 
+    }
+}
+
+@media (max-width: 500px) {
+    .cart_Box {
+        padding: 5px; 
+    }
+
+    .cart_Img img {
+        width: 40px; 
+        height: 40px;
+    }
+
+    .buttons {
+        display: flex; 
+        gap: 6px; 
+        flex-direction: row;
+        margin-bottom: 1vh;
+    }
+
+    
+    .amount span{
+       font-size: 1.5rem;
+        margin-top:-5rem ;
+    }   
+
+    .remove span {
+        font-size: 1.5rem; 
+    }
+
+    .remove button{
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+
+    .total {
+        flex-direction: column;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .total span:nth-child(2) {
+        font-size: 1.2rem; 
+    }
+}
